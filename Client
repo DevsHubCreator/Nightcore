@@ -103,7 +103,7 @@ function library:Create()
         name.Parent = ClickGui
         name.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
         name.BorderSizePixel = 0
-        name.Position = UDim2.new(0.078, 0, 0.25, 0)
+        name.Position = UDim2.new(0.0779961646, 0, 0.253340095, 0)
         name.Size = UDim2.new(0, 204, 0, 39)
         name.ZIndex = 2
         
@@ -119,7 +119,7 @@ function library:Create()
         ImageLabel_3.BackgroundTransparency = 1.000
         ImageLabel_3.BorderSizePixel = 0
         ImageLabel_3.Position = UDim2.new(0.308823317, 0, -0.293759108, 0)
-        ImageLabel_3.Size = UDim2.new(0, 76, 0, 73) --[[0.078, 0.227, 0.375, 0.673]]
+        ImageLabel_3.Size = UDim2.new(0, 76, 0, 73)
         ImageLabel_3.ZIndex = 2
 
         if string.find(tostring(img),"rbxassetid://") then
