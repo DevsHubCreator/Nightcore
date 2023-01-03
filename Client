@@ -402,8 +402,8 @@ function library:Create()
     end
     return tab
 
-    return library
     end
+    return library
 
 --[[
 local main = library:Create()
