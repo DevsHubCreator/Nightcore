@@ -202,7 +202,6 @@ function library:Create()
             local Toggle = Instance.new("TextButton")
             local TextLabel = Instance.new("TextLabel")
             local UIGradient_5 = Instance.new("UIGradient")
-            local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
             
             --Properties:
             
@@ -236,9 +235,6 @@ function library:Create()
             
             UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(109, 102, 162)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
             UIGradient_5.Parent = Toggle
-            
-            UIAspectRatioConstraint_2.Parent = Combat
-            UIAspectRatioConstraint_2.AspectRatio = 5.109
             
             spawn(function()
                 local db = false;
