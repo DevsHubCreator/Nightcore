@@ -2,12 +2,11 @@ if game:GetService("CoreGui"):FindFirstChild("NightcoreClient") then
     game:GetService("CoreGui"):FindFirstChild("NightcoreClient"):Destroy()
 end
 
-local library = {}
-
 function tween(object,ti,info)
     game:GetService("TweenService"):Create(object,TweenInfo.new(ti),info):Play()
 end
 
+local library = {}
 function library:Create()
     local NightcoreClient = Instance.new("ScreenGui")
     local Watermark = Instance.new("Frame")
@@ -391,5 +390,21 @@ function library:Create()
 
     return Contrainer
 end
-
 return library
+
+--[[
+local main = library:Create()
+
+local aura = main:CreateToggle("Killaura",function(bool)
+    
+end)
+
+local dropdown_aura = aura:CreateDropdown(25)
+dropdown_aura:CreateDToggle("Criticals",function(bool)
+    print(bool)
+end)
+
+local test = main:CreateToggle("Test",function(bool)
+    
+end)
+]]
