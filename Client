@@ -104,7 +104,7 @@ function library:Create()
         Combat.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
         Combat.BorderSizePixel = 0
         Combat.Position = UDim2.new(0.078, 0, 0.25, 0)
-        Combat.Size = UDim2.new(0, 204, 0, 39)
+        Combat.Size = UDim2.new(0, pos, 0, 39)
         Combat.ZIndex = 2
         
         UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(208, 208, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
@@ -119,7 +119,7 @@ function library:Create()
         ImageLabel_3.BackgroundTransparency = 1.000
         ImageLabel_3.BorderSizePixel = 0
         ImageLabel_3.Position = UDim2.new(0.308823317, 0, -0.293759108, 0)
-        ImageLabel_3.Size = UDim2.new(0, pos, 0, 73) --[[0.078, 0.227, 0.375, 0.673]]
+        ImageLabel_3.Size = UDim2.new(0, 76, 0, 73) --[[0.078, 0.227, 0.375, 0.673]]
         ImageLabel_3.ZIndex = 2
 
         print(img)
