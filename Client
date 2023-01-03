@@ -125,7 +125,7 @@ function library:Create()
         if string.find(tostring(img),"rbxassetid://") then
             ImageLabel_3.Image = tostring(img)
         else
-            ImageLabel_3.Image = "rbxassetid"..tostring(img)
+            ImageLabel_3.Image = "rbxassetid://"..tostring(img)
         end
         
         Frame.Parent = TabMain
