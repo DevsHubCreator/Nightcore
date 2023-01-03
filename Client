@@ -122,6 +122,8 @@ function library:Create()
         ImageLabel_3.Size = UDim2.new(0, pos, 0, 73) --[[0.078, 0.227, 0.375, 0.673]]
         ImageLabel_3.ZIndex = 2
 
+        print(img)
+
         if string.find(img,"rbxassetid://") then
             ImageLabel_3.Image = img
         else
