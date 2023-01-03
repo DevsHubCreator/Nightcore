@@ -86,7 +86,7 @@ function library:Create()
 
     local tab = {}
 
-    function tab:CreateTab(img,TabName)
+    function tab:CreateTab(img,TabName,TabPosition)
         local TabMain = Instance.new("Frame")
         local UIGradient_3 = Instance.new("UIGradient")
         local UICorner_2 = Instance.new("UICorner")
@@ -99,11 +99,11 @@ function library:Create()
         local UIListLayout = Instance.new("UIListLayout")
         local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
-        TabMain.Name = TabName
+        TabMain.Name = tostring(TabName)
         TabMain.Parent = ClickGui
         TabMain.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
         TabMain.BorderSizePixel = 0
-        TabMain.Position = UDim2.new(0.0779961646, 0, 0.253340095, 0)
+        TabMain.Position = UDim2.new(tonumber(TabPosition), 0, 0.253340095, 0)
         TabMain.Size = UDim2.new(0, 204, 0, 39)
         TabMain.ZIndex = 2
         
