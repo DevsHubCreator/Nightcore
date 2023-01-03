@@ -400,11 +400,10 @@ function library:Create()
     
         return Contrainer
     end
+    return tab
 
     return library
     end
-
-    return tab
 
 --[[
 local main = library:Create()
