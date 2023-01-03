@@ -103,8 +103,8 @@ function library:Create()
         Combat.Parent = ClickGui
         Combat.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
         Combat.BorderSizePixel = 0
-        Combat.Position = UDim2.new(0.078, 0, 0.25, 0)
-        Combat.Size = UDim2.new(0, pos, 0, 39)
+        Combat.Position = UDim2.new(pos, 0, 0.25, 0)
+        Combat.Size = UDim2.new(0, 204, 0, 39)
         Combat.ZIndex = 2
         
         UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(208, 208, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
