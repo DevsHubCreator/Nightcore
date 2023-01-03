@@ -86,7 +86,7 @@ function library:Create()
 
     local tab = {}
 
-    function tab:CreateTab(pos,img)
+    function tab:CreateTab(img)
         local Combat = Instance.new("Frame")
         local UIGradient_3 = Instance.new("UIGradient")
         local UICorner_2 = Instance.new("UICorner")
