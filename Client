@@ -8,6 +8,7 @@ end
 
 local library = {}
 function library:Create()
+    print('O')
     local NightcoreClient = Instance.new("ScreenGui")
     local Watermark = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -83,6 +84,8 @@ function library:Create()
     modal.Text = ""
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
+
+
 
     local tab = {}
 
