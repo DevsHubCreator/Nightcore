@@ -1,3 +1,5 @@
+local uis = game:GetService("UserInputService")
+
 if game:GetService("CoreGui"):FindFirstChild("NightcoreClient") then
     game:GetService("CoreGui"):FindFirstChild("NightcoreClient"):Destroy()
 end
@@ -93,8 +95,6 @@ function library:Create()
             NightcoreClient.Enabled = uiVisible
         end
     end)
-
-
 
     local tab = {}
 
