@@ -84,12 +84,15 @@ function library:Create()
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
 
+--[[
+
     game:GetService("UserInputService").InputBegan:Connect(function(key)
         if key.KeyCode == Enum.KeyCode.RightAlt then
             uiVisible = not uiVisible;
             NightcoreClient.Enabled = uiVisible;
         end
     end)
+]]
 
     local tab = {}
 
