@@ -6,6 +6,8 @@ function tween(object,ti,info)
     game:GetService("TweenService"):Create(object,TweenInfo.new(ti),info):Play()
 end
 
+local uiVisible = false;
+
 local library = {}
 function library:Create()
     local NightcoreClient = Instance.new("ScreenGui")
@@ -24,7 +26,7 @@ function library:Create()
 
     NightcoreClient.Name = "NightcoreClient"
     NightcoreClient.Parent = (game:GetService("CoreGui") or gethui())
-    NightcoreClient.Enabled = true
+    NightcoreClient.Enabled = false
     
     Watermark.Name = "Watermark"
     Watermark.Parent = NightcoreClient
@@ -84,6 +86,13 @@ function library:Create()
     modal.Text = ""
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
+
+    uis.InputBegan:Connect(function(key)
+        if key.KeyCode == Enum.KeyCode.RightAlt then
+            uiVisible = not uiVisible
+            NightcoreClient.Enabled = uiVisible
+        end
+    end)
 
 
 
@@ -392,6 +401,8 @@ function library:Create()
                 end
                 return DToggle
 
+                --[[
+
                 local DSlider = {}
 
                 function DSlider:CreateDSlider(text,min,max,callback)
@@ -406,6 +417,8 @@ function library:Create()
                     callback = callback or function() end
 
                 end
+
+                ]]
                 return DMultiDropdown
             end
             return ddown
