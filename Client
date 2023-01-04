@@ -89,13 +89,6 @@ function library:Create()
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
 
-    uis.InputBegan:Connect(function(key)
-        if key.KeyCode == Enum.KeyCode.RightAlt then
-            uiVisible = not uiVisible
-            NightcoreClient.Enabled = uiVisible
-        end
-    end)
-
     local tab = {}
 
     function tab:CreateTab(img,TabName,TabPosition)
@@ -195,6 +188,15 @@ function library:Create()
             end)
         end
         coroutine.wrap(HIXAVQI_fake_script)()
+        local function WIODDJ_fake_script() -- UIGradient_2.LocalScript 
+            uis.InputBegan:Connect(function(key)
+                if key.KeyCode == Enum.KeyCode.RightAlt then
+                    uiVisible = not uiVisible
+                    NightcoreClient.Enabled = uiVisible
+                end
+            end)
+        end
+        coroutine.wrap(WIODDJ_fake_script)()
         
         local Contrainer = {}
     
