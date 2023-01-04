@@ -6,8 +6,6 @@ function tween(object,ti,info)
     game:GetService("TweenService"):Create(object,TweenInfo.new(ti),info):Play()
 end
 
-local uiVisible = false;
-
 local library = {}
 function library:Create()
     local NightcoreClient = Instance.new("ScreenGui")
@@ -21,6 +19,8 @@ function library:Create()
 
     local ClickGui = Instance.new("Frame")
     local modal = Instance.new("TextButton")
+
+   
 
     NightcoreClient.Name = "NightcoreClient"
     NightcoreClient.Parent = (game:GetService("CoreGui") or gethui())
@@ -83,16 +83,6 @@ function library:Create()
     modal.Text = ""
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
-
---[[
-
-    game:GetService("UserInputService").InputBegan:Connect(function(key)
-        if key.KeyCode == Enum.KeyCode.RightAlt then
-            uiVisible = not uiVisible;
-            NightcoreClient.Enabled = uiVisible;
-        end
-    end)
-]]
 
     local tab = {}
 
