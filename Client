@@ -6,9 +6,10 @@ function tween(object,ti,info)
     game:GetService("TweenService"):Create(object,TweenInfo.new(ti),info):Play()
 end
 
+print('O')
+
 local library = {}
 function library:Create()
-    print('O')
     local NightcoreClient = Instance.new("ScreenGui")
     local Watermark = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
