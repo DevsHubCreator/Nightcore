@@ -388,12 +388,23 @@ function library:Create()
                     end)
                 end
 
+                local DSlider = {}
 
+                function DSlider:CreateDSlider(text,min,max,callback)
+                    callback = callback or function() end
 
+                end
 
+                local DMultiDropdown = {}
+
+                function MultiDropdown:CreateDMultiDropdown(text,list,callback)
+                    callback = callback or function() end
+
+                end
+
+                return DSlider
+                return DMultiDropdown
                 return DToggle
-
-            end
     
             return ddown
         end
