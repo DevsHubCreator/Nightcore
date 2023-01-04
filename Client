@@ -418,8 +418,9 @@ function library:Create()
 
                 end
 
-                ]]
                 return DMultiDropdown
+
+                ]]
             end
             return ddown
         end
