@@ -84,6 +84,15 @@ function library:Create()
     modal.TextColor3 = Color3.fromRGB(0, 0, 0)
     modal.TextSize = 14.000
 
+    local uiVisible = false;
+
+    game:GetService("UserInputService").InputBegan:Connect(function(key)
+        if key.KeyCode == Enum.KeyCode.RightAlt then
+            uiVisible = not uiVisible
+            NightcoreClient.Enabled = uiVisible
+        end
+    end)
+
     local tab = {}
 
     function tab:CreateTab(img,TabName,TabPosition)
@@ -387,8 +396,26 @@ function library:Create()
                         end)
                     end)
                 end
-    
+
+                local DSlider = {}
+
+                function DSlider:CreateDSlider(text,min,max,callback)
+                    callback = callback or function() end
+
+
+                end
+
+                local DMultiDropdown = {}
+
+                function MultiDropdown:CreateDMultiDropdown(text,list,callback)
+                    callback = callback or function() end
+
+                    
+                end
+
+                return DSlider
                 return DToggle
+                return DMultiDropdown
             end
     
             return ddown
