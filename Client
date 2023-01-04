@@ -26,6 +26,7 @@ function library:Create()
 
     NightcoreClient.Name = "NightcoreClient"
     NightcoreClient.Parent = (game:GetService("CoreGui") or gethui())
+    NightcoreClient.Enabled = false;
     
     Watermark.Name = "Watermark"
     Watermark.Parent = NightcoreClient
