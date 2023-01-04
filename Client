@@ -26,7 +26,7 @@ function library:Create()
 
     NightcoreClient.Name = "NightcoreClient"
     NightcoreClient.Parent = (game:GetService("CoreGui") or gethui())
-    NightcoreClient.Enabled = false;
+    NightcoreClient.Enabled = false
     
     Watermark.Name = "Watermark"
     Watermark.Parent = NightcoreClient
@@ -88,9 +88,8 @@ function library:Create()
     modal.TextSize = 14.000
 
     uis.InputBegan:Connect(function(key)
-        if key.KeyCode == Enum.KeyCode.RightAlt then
-            uiVisible = not uiVisible
-            NightcoreClient.Enabled = uiVisible
+        if key.KeyCode == Enum.KeyCode.P then
+            NightcoreClient.Enabled = true
         end
     end)
 
